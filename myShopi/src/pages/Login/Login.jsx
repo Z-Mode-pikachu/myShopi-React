@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      console.log("User logged in successfully!");
+      // console.log("User logged in successfully!");
       toast.success("Logged In Successfully!", { position: "top-center" });
       navigate("/");
 
@@ -24,13 +24,13 @@ const Login = () => {
 
       if (storedUser) {
         const { email, password } = storedUser;
-        console.log("Retrieved email:", email);
-        console.log("Retrieved password:", password);
+        // console.log("Retrieved email:", email);
+        // console.log("Retrieved password:", password);
       } else {
-        console.log("User information not found in localStorage");
+        // console.log("User information not found in localStorage");
       }
     } catch (error) {
-      console.error("Error logging in:", error.message);
+      // console.error("Error logging in:", error.message);
       toast.error(`Error Logging-In or Invalid Credentials`, {
         position: "top-center",
       });
