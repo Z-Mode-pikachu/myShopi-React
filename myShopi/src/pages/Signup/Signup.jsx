@@ -34,16 +34,16 @@ const Signup = () => {
 
       toast.success("User signed up successfully!", { position: "top-center" });
       navigate("/login");
-      console.log(email, password);
+      // console.log(email, password);
       
       const userInformation = {
         email: email,
         password: password,
       };
-      localStorage.setItem("user", JSON.stringify(userInformation));
+      // localStorage.setItem("user", JSON.stringify(userInformation));
     } catch (error) {
-      console.error("Error signing up:", error.message);
-      toast.error(`Error: ${error.message}`);
+      // console.error("Error signing up:", error.message);
+      toast.error(`Error`);
     }
   };
 
