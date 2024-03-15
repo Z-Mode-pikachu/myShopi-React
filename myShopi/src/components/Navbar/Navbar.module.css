@@ -1,0 +1,48 @@
+/* navbar styles */
+.navbar {
+  width: 100%;
+  background: rgb(27, 198, 255);
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
+  align-items: center;
+}
+
+.title {
+  color: aliceblue;
+  margin-right: auto;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  background: linear-gradient(135deg, #544798 0%, #182337 100%);
+  padding: .5rem;
+}
+
+.navbar button,
+.navbar a {
+  margin-left: 16px;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+
+.links {
+  padding: .5rem;
+  background: rgba(112, 128, 144, 0.171);
+  border: 1px dashed darkblue;
+  border-radius: 10%;
+}
+
+.links:hover {
+  color: aqua;
+  padding: .5rem;
+  transition: all .05s ease-in;
+  border: 2.5px double rgb(44, 202, 255);
+}
